@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
+}
+
+.plan{
+	width: 800px;
+	height: 300px;
+	border: solid black;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cactus{
+	position: absolute;
+	top: 230px;
+	left: 760px;
+}
+
+.animation-cactus{
+	animation: cactus 1s infinite linear;
+}
+
+@keyframes cactus{
+	0%{left:780px;}
+	100%{left:0px;}
+}
+
+.character{
+	position: absolute;
+	top: 205px;
+	left: 100px;
+}
+
+.animation-character{
+	animation: jump 500ms infinite;
+}
+
+@keyframes jump{
+	0%{top:205px;}
+	30%{top: 120px;}
+	70%{top:120px;}
+	100%{top: 205px;}
+}
+
+.game-over{
+	position: absolute;
+	font-family: 'Poor Story', cursive;
+	font-size: 40px;
+	font-weight: 700;
+	width: 170px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.counter{
+	font-family: 'Poor Story', cursive;
+	font-size: 30px;
+	font-weight: 700;
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+
